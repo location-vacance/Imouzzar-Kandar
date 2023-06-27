@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    #toggle{
+        display: none;
+    }
+    .divUl{
+        display: block !important;
+    }
+    .divUlResponsive{
+        display: none;
+    }
+    .showUlLi{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    #toggle{
+        display: block;
+    }
+    .divUl{
+        display: none !important;
+    }
+    .showUlLi{
+        display: flex !important;
+        justify-content: center;
+    }
+    .divUlResponsive{
+        position: absolute;
+        background-color: aliceblue;
+        width: 100%;
+        top: 100%;
+        right: 0;
+    }
+}
