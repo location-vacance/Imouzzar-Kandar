@@ -3,6 +3,14 @@
     padding: 0;
     text-decoration: none !important;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #4a6ee0;
+}
 .toArabic{
     display: flex;
     flex-direction: column;
@@ -16,7 +24,7 @@
     justify-content: space-between;
     padding: 1rem;
     position: relative;
-    background-color: aliceblue;
+    background-color: #0088ff;
 }
 .toArabic nav div{    
     display: flex;
@@ -26,6 +34,7 @@
 }
 #toggle{
     display: none;
+    background-color: aqua;
 }
 #toggle span{
     width: 50px;
@@ -52,7 +61,8 @@
 .divUlResponsive{
     display: none !important;
 }
-.divUlResponsive #ulLiResponsive{
+.divUlResponsive #ulLiResponsive {
     padding: 0;
     margin: 0;
+    text-align: center;
 }
