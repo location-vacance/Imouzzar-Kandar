@@ -4,6 +4,20 @@
   text-decoration: none !important;
 }
 
+#btnWhatsappPopUp {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    width: 70px;
+    z-index: 10000;
+    height: 70px;
+}
+
+#btnWhatsappPopUp a img {
+    width: 70px;
+    height: 70px;
+}
+
 a {
   color: white;
 }

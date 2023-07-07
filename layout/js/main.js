@@ -11,3 +11,12 @@ function showHidden(caseUl) {
         toggle.setAttribute('onclick','showHidden(0)')
     }
 }
+var div = document.createElement('div');
+div.id = "btnWhatsappPopUp"
+var anchor = document.createElement('a');
+anchor.href = 'https://api.whatsapp.com/send?phone=212663661627';
+var image = document.createElement('img');
+image.src = 'https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Whatsapp-512.png';
+anchor.appendChild(image);
+div.appendChild(anchor);
+document.body.appendChild(div);
