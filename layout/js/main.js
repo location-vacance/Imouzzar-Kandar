@@ -22,26 +22,16 @@ anchor.appendChild(image);
 div.appendChild(anchor);
 document.body.appendChild(div);
 
-var videos = document.querySelectorAll("#video-container video");
-var currentVideoIndex = 0;
 
-function playNextVideo() {
-  if (currentVideoIndex >= videos.length) {
-    var currentVideo = videos[0];
-    currentVideo.addEventListener("ended", function() {
-      currentVideoIndex++;
-      playNextVideo();
-    });
-    currentVideo.play();
-  }
-
-  var currentVideo = videos[currentVideoIndex];
-  currentVideo.addEventListener("ended", function() {
-    currentVideoIndex++;
-    playNextVideo();
-  });
-
-  currentVideo.play();
+function showImage(id){
+    var path = `./layout/image/imouzzer kandar/i-${id}.jpg`
+    const showImage = document.getElementById('showImage')
+    const Image = document.getElementById('Image')
+    
+    Image.src=path
+    showImage.setAttribute('style','display : flex !important')
 }
-
-playNextVideo();
+function closeImage(){
+    const showImage = document.getElementById('showImage')
+    showImage.setAttribute('style','display : none !important')
+}

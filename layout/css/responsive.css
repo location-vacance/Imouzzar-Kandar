@@ -29,5 +29,21 @@
         width: 100%;
         top: 100%;
         right: 0;
+        height: 11rem;
+    }
+}
+@media screen and (max-width: 843px) {
+    .showImage img{
+        width: 38rem;
+    }
+}
+@media screen and (max-width: 643px) {
+    .showImage img{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 507px) {
+    .showImage img{
+        width: 20rem;
     }
 }
