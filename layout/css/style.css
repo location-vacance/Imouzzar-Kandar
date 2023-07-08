@@ -13,6 +13,16 @@
       height: 70px;
   }
   
+  #btnTelephonePopUp{
+    position: fixed;
+      right: 2.5rem;
+      bottom: 8rem;
+      width: 70px;
+      z-index: 10000;
+      height: 70px;
+  }
+
+  #btnTelephonePopUp a img,
   #btnWhatsappPopUp a img {
       width: 70px;
       height: 70px;
@@ -26,7 +36,7 @@
     color: #4a6ee0;
   }
 
-  .a0,.a1,.a2,.a3{
+  .a0,.a1,.a2{
     padding: 10px 15px;
     border-radius: 50px;
   }
@@ -41,10 +51,6 @@
 
   .a2{
     background-color: blue;
-}
-
-  .a3{
-    background-color: red;
 }
 
   .toArabic {
