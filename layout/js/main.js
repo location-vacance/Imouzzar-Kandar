@@ -23,8 +23,8 @@ div.appendChild(anchor);
 document.body.appendChild(div);
 
 
-function showImage(id){
-    var path = `./layout/image/imouzzer kandar/i-${id}.jpg`
+function showImage(id,folder){
+    var path = `./layout/image/${folder}/i-${id}.jpg`
     const showImage = document.getElementById('showImage')
     const Image = document.getElementById('Image')
     
