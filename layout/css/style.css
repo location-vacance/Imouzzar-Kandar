@@ -7,6 +7,11 @@
 p {
   text-align: end;
   margin-bottom: 2rem;
+  font-size: 18px;
+}
+h3{
+  text-align: center;
+  width: 100%;
 }
 
 #btnWhatsappPopUp {
@@ -51,6 +56,7 @@ a:hover {
 .a2 {
   padding: 10px 15px;
   border-radius: 50px;
+  font-size: 20px;
 }
 
 .a0 {
@@ -58,7 +64,7 @@ a:hover {
 }
 
 .a1 {
-  background-color: brown;
+  background-color: red;
 }
 
 .a2 {
@@ -128,15 +134,15 @@ h4 {
 }
 .grid-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
 
 .case {
   padding: 10px;
-  width: 18.54vw;
+  width: 28.54vw;
   text-align: end;
-  height: 18.54vw;
+  height: 28.54vw;
 }
 .description-case {
   grid-row: 2/4;
