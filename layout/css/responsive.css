@@ -47,3 +47,35 @@
         width: 20rem;
     }
 }
+@media screen and (max-width: 1400px) {
+    #image_slide5{
+        display: none;
+    }
+    #image_slide4{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #image_slide4{
+        display: none;
+    }
+    #image_slide3{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 992px) {
+    #image_slide3{
+        display: none;
+    }
+    #image_slide2{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 563px) {
+    #image_slide2{
+        display: none;
+    }
+    #image_slide1{
+        margin-right: 0!important;
+    }
+}
