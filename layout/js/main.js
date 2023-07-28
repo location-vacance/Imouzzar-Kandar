@@ -42,6 +42,14 @@ function showImage(id, folder) {
   Image.src = path;
   showImage.setAttribute("style", "display : flex !important");
 }
+function showImage2(img) {
+  var path = `./layout/image/${img}`;
+  const showImage = document.getElementById("showImage");
+  const Image = document.getElementById("Image");
+
+  Image.src = path;
+  showImage.setAttribute("style", "display : flex !important");
+}
 function closeImage() {
   const showImage = document.getElementById("showImage");
   showImage.setAttribute("style", "display : none !important");
