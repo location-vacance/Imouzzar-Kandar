@@ -12,10 +12,10 @@
         display: none !important;
     }
     .table_voyage tr td{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .table_voyage thead tr td{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }
 @media screen and (max-width: 767px) {
@@ -41,10 +41,10 @@
         width: 90% !important;
     }
     .table_voyage tr td{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .table_voyage thead tr td{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }
 @media screen and (max-width: 843px) {
@@ -96,17 +96,17 @@
 }
 @media screen and (max-width: 473px) {
     .table_voyage tr td{
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
     .table_voyage thead tr td{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 @media screen and (max-width: 375px) {
     .table_voyage tr td{
-        font-size: 0.25rem;
+        font-size: 0.5rem;
     }
     .table_voyage thead tr td{
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 }
