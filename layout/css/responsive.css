@@ -11,6 +11,12 @@
     .showUlLi{
         display: none !important;
     }
+    .table_voyage tr td{
+        font-size: 1rem;
+    }
+    .table_voyage thead tr td{
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width: 767px) {
     #toggle{
@@ -33,6 +39,12 @@
     }
     .carImg img {
         width: 90% !important;
+    }
+    .table_voyage tr td{
+        font-size: 1rem;
+    }
+    .table_voyage thead tr td{
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width: 843px) {
@@ -80,5 +92,21 @@
     }
     #image_slide1{
         margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 473px) {
+    .table_voyage tr td{
+        font-size: 0.5rem;
+    }
+    .table_voyage thead tr td{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .table_voyage tr td{
+        font-size: 0.25rem;
+    }
+    .table_voyage thead tr td{
+        font-size: 0.5rem;
     }
 }
