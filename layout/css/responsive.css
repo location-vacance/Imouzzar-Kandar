@@ -1,0 +1,84 @@
+@media screen and (min-width: 768px) {
+    #toggle{
+        display: none;
+    }
+    .divUl{
+        display: block !important;
+    }
+    .divUlResponsive{
+        display: none;
+    }
+    .showUlLi{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    #toggle{
+        display: block;
+    }
+    .divUl{
+        display: none !important;
+    }
+    .showUlLi{
+        display: flex !important;
+        justify-content: center;
+    }
+    .divUlResponsive{
+        position: absolute;
+        background-color: #0088ff;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        height: 11rem;
+    }
+    .carImg img {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 843px) {
+    .showImage img{
+        width: 38rem;
+    }
+}
+@media screen and (max-width: 643px) {
+    .showImage img{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 507px) {
+    .showImage img{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #image_slide5{
+        display: none;
+    }
+    #image_slide4{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #image_slide4{
+        display: none;
+    }
+    #image_slide3{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 992px) {
+    #image_slide3{
+        display: none;
+    }
+    #image_slide2{
+        margin-right: 0!important;
+    }
+}
+@media screen and (max-width: 563px) {
+    #image_slide2{
+        display: none;
+    }
+    #image_slide1{
+        margin-right: 0!important;
+    }
+}
