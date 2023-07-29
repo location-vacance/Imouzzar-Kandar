@@ -22,6 +22,19 @@ h3 {
   z-index: 10000;
   height: 50px;
 }
+#pointerGif {
+  display: none;
+  position: fixed;
+  left: 27px;
+  top: 27px;
+  width: 30px;
+  z-index: 10000;
+  height: 30px;
+}
+#pointerGif img{
+  width: 100%;
+  height: 100%;
+}
 
 #btnTelephonePopUp {
   position: fixed;
@@ -288,4 +301,11 @@ h4 {
 }
 .centerTdTbody {
   justify-content: center !important;
+}
+.topMe {
+  transform: translateY(10px);
+}
+
+.bottomMe {
+  transform: translateY(5px);
 }

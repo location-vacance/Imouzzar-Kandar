@@ -207,3 +207,26 @@ function slideImg(
   image_slide5.src = `./layout/image/imouzzer kandar/i-${index_img_slide5}.jpg`
   image_slide5.setAttribute('onclick',`showImage(${index_img_slide5},'imouzzer kandar')`)
 }
+
+var div3 = document.createElement("div");
+div3.id = "pointerGif";
+var image3 = document.createElement("img");
+image3.src = "./layout/image/pointer.png";
+div3.appendChild(image3);
+document.body.appendChild(div3);
+
+function movePointer() {
+  const pointerGif = document.getElementById('pointerGif');
+  
+  if (pointerGif.classList.contains('topMe')) {
+    pointerGif.classList.remove('topMe');
+    pointerGif.classList.add('bottomMe');
+  } else {
+    pointerGif.classList.remove('bottomMe');
+    pointerGif.classList.add('topMe');
+  }
+
+  setTimeout(movePointer, 500);
+}
+
+movePointer();
