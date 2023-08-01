@@ -1,14 +1,41 @@
+var div3 = document.createElement("div");
+div3.id = "pointerGif";
+div3.setAttribute("onclick", "showHidden(1)");
+var image3 = document.createElement("img");
+image3.src = "./layout/image/pointer.png";
+div3.appendChild(image3);
+document.body.appendChild(div3);
+
+function movePointer() {
+  const pointerGif = document.getElementById('pointerGif');
+  
+  if (pointerGif.classList.contains('topMe')) {
+    pointerGif.classList.remove('topMe');
+    pointerGif.classList.add('bottomMe');
+  } else {
+    pointerGif.classList.remove('bottomMe');
+    pointerGif.classList.add('topMe');
+  }
+
+  setTimeout(movePointer, 500);
+}
+
+movePointer();
+
 const divUlResponsive = document.getElementById("divUlResponsive");
 const toggle = document.getElementById("toggle");
+const pointerGif = document.getElementById('pointerGif');
 function showHidden(caseUl) {
   // caseUl = 0 -> hid ul | caseUrl = 1 -> show ul
   if (caseUl == 0) {
     divUlResponsive.setAttribute("class", "divUlResponsive");
     toggle.setAttribute("onclick", "showHidden(1)");
+    pointerGif.setAttribute("onclick", "showHidden(1)");
   }
   if (caseUl == 1) {
     divUlResponsive.setAttribute("class", "showUlLi divUlResponsive");
     toggle.setAttribute("onclick", "showHidden(0)");
+    pointerGif.setAttribute("onclick", "showHidden(0)");
   }
 }
 
@@ -207,26 +234,3 @@ function slideImg(
   image_slide5.src = `./layout/image/imouzzer kandar/i-${index_img_slide5}.jpg`
   image_slide5.setAttribute('onclick',`showImage(${index_img_slide5},'imouzzer kandar')`)
 }
-
-var div3 = document.createElement("div");
-div3.id = "pointerGif";
-var image3 = document.createElement("img");
-image3.src = "./layout/image/pointer.png";
-div3.appendChild(image3);
-document.body.appendChild(div3);
-
-function movePointer() {
-  const pointerGif = document.getElementById('pointerGif');
-  
-  if (pointerGif.classList.contains('topMe')) {
-    pointerGif.classList.remove('topMe');
-    pointerGif.classList.add('bottomMe');
-  } else {
-    pointerGif.classList.remove('bottomMe');
-    pointerGif.classList.add('topMe');
-  }
-
-  setTimeout(movePointer, 500);
-}
-
-movePointer();
